@@ -10,6 +10,7 @@ namespace HireTrack.Infrastructure
         {
             services.AddScoped<ICandidateRepository, CandidateRepository>();
             services.AddScoped<IInterviewRepository, InterviewRepository>();
+            services.AddScoped<CandidateService>();
             return services;
         }
     }
